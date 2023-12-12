@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDoList.views.List">
+    <ContentPage.Background>
+        <LinearGradientBrush EndPoint="0,1">
+            <GradientStop Color="LightPink"
+                          Offset="0.1" />
+            <GradientStop Color="HotPink"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center">
+            <Button Text="Add To List" 
+                    Clicked="Btn_Add_Task"
+                    BackgroundColor="LightSeaGreen"
+                    WidthRequest="250"
+                    CornerRadius="50"
+                    Margin="50,10,50,10"/>
+            <StackLayout x:Name="TasksContainerStack">
+               
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

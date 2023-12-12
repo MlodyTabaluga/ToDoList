@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDoList.views.AddTaskPage">
+    <ContentPage.Background>
+        <LinearGradientBrush EndPoint="0,1">
+            <GradientStop Color="pink"
+                          Offset="0.1" />
+            <GradientStop Color="MediumPurple"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="10">
+            <Entry x:Name="TaskName" 
+                   Placeholder="Insert Task Title"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20"
+                   TextColor="White"/>
+            <Entry x:Name="TaskDescription" 
+                   Placeholder="Insert Task Description"
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"/>
+            <DatePicker x:Name="TaskDate" HorizontalOptions="Center"/>
+            <Button Text="Add Task" 
+                    x:Name="OperationButton" 
+                    Margin="50,0,50,0" 
+                    Padding="20" 
+                    CornerRadius="20" 
+                    BackgroundColor="DeepPink"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
